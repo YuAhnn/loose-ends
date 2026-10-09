@@ -1,0 +1,22 @@
+[tools]
+lute = "luau-lang/lute@1.0.0"
+stylua = "JohnnyMorganz/StyLua@2.5.2"
+selene = "Kampfkarren/selene@0.31.0"
+mayari = "mayari-org/mayari-cli@0.1.1"
+
+[scripts]
+build = "rm -rf .mayari && mayari build"
+start = "lute .mayari/src/main.luau"
+dev = "lute .mayari/src/main.luau dev"
+format = "stylua src/"
+format-check = "stylua --check src/"
+lint = "selene src/"
+
+[dependencies]
+mayari = { name = "mayari/core", version = "=0.7.7" }
+common = { name = "mayari/common", version = "^" }
+types = { name = "mayari/types", version = "^" }
+d1client = { name = "mayari/d1client", version = "^" }
+
+[patches]
+"mayari/core@0.7.7" = "patches/mayari_core@0.7.7.patch"

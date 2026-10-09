@@ -1,0 +1,9 @@
+packages/
+.ember-patch/
+dist/
+.mayari/
+patches/
+
+.env
+.env.local
+.env.development
