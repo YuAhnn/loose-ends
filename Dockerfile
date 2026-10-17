@@ -5,13 +5,13 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN sed -i 's|http://.*\.ubuntu\.com/ubuntu|http://us.archive.ubuntu.com/ubuntu|g' /etc/apt/sources.list.d/ubuntu.sources && \
     apt-get update && \
     apt-get install -y --no-install-recommends \
-        curl \
-        unzip \
-        ca-certificates \
-        libssl3 \
-        libdbus-1-3 \
-        libstdc++6 \
-        git && \
+    curl \
+    unzip \
+    ca-certificates \
+    libssl3 \
+    libdbus-1-3 \
+    libstdc++6 \
+    git && \
     rm -rf /var/lib/apt/lists/*
 
 RUN curl -fsSL https://mayari-org.github.io/docs/install-ember.sh | sh
@@ -22,11 +22,11 @@ ENV PORT=8080
 
 WORKDIR /mayari-app
 
-COPY ember.toml ./
+COPY ember.toml ember.lock ./
 RUN embr install
 
 COPY . .
 
 EXPOSE 8080
 
-CMD ["sh", "-c", "embr run build && exec embr run start"]
+CMD ["sh", "-c", "embr build && exec embr start"]

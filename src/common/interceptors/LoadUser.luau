@@ -1,4 +1,4 @@
-local Auth = require("../lib/auth")
+local Auth = require("../../lib/auth")
 local exception = require("common").exception
 
 local function LoadUser(req, next)

@@ -5,6 +5,7 @@ version = 2
 name = "mayari/adpt"
 version = "0.1.6"
 environment = "luau"
+link = "adpt"
 index = "https://github.com/ember-luau/index"
 type = "tar-gz"
 url = "https://cdn.luaupm.com/mayari/adpt/0.1.6.tar.gz"
@@ -20,16 +21,12 @@ url = "https://cdn.luaupm.com/mayari/common/0.1.11.tar.gz"
 
 [[package]]
 name = "mayari/core"
-version = "0.7.7"
+version = "0.8.0"
 environment = "luau"
 link = "mayari"
 index = "https://github.com/ember-luau/index"
 type = "tar-gz"
-url = "https://cdn.luaupm.com/mayari/core/0.7.7.tar.gz"
-
-[package.patch]
-path = "patches/mayari_core@0.7.7.patch"
-hash = "d58c6599d82d9680"
+url = "https://cdn.luaupm.com/mayari/core/0.8.0.tar.gz"
 
 [[package]]
 name = "mayari/d1client"
@@ -39,6 +36,24 @@ link = "d1client"
 index = "https://github.com/ember-luau/index"
 type = "tar-gz"
 url = "https://cdn.luaupm.com/mayari/d1client/0.1.1.tar.gz"
+
+[[package]]
+name = "mayari/eval"
+version = "0.1.0"
+environment = "luau"
+link = "eval"
+index = "https://github.com/ember-luau/index"
+type = "tar-gz"
+url = "https://cdn.luaupm.com/mayari/eval/0.1.0.tar.gz"
+
+[[package]]
+name = "mayari/static"
+version = "0.1.1"
+environment = "luau"
+link = "static"
+index = "https://github.com/ember-luau/index"
+type = "tar-gz"
+url = "https://cdn.luaupm.com/mayari/static/0.1.1.tar.gz"
 
 [[package]]
 name = "mayari/types"
