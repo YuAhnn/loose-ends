@@ -1,3 +1,0 @@
-# Getting Started
-
-***Mayari Project***
