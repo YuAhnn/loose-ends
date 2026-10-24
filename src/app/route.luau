@@ -5,9 +5,9 @@ local Health = {}
 
 function Health.Get()
     return response.json({
-        data = {
-            service = "Mayari-Todo-Api",
-            status = "Ok",
+        api = {
+            msg = "Mayari-Todo-Api",
+            status = "ok",
         },
     })
 end
